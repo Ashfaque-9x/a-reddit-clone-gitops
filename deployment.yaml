@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: reddit-clone-app
-          image: ashfaque9x/reddit-clone-app-pipeline:1.0.0-9
+          image: ashfaque9x/reddit-clone-app:1.0.0-9
           resources:
             limits:
               memory: "256Mi"
