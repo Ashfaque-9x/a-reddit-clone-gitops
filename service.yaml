@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: reddit-clone-app-service
+  name: reddit-clone-service
   labels:
-    app: reddit-clone-app 
+    app: reddit-clone 
 spec:
   selector:
-    app: reddit-clone-app
+    app: reddit-clone
 
   ports:
     - port: 3000
