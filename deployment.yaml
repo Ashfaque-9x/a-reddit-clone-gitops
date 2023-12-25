@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: reddit-clone-app:1.0.0-7
+  name: reddit-clone-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: reddit-clone-app:1.0.0-7
+      app: reddit-clone
   template:
     metadata:
       labels:
-        app: reddit-clone-app:1.0.0-7
+        app: reddit-clone
     spec:
       containers:
-        - name: reddit-clone-app:1.0.0-7
+        - name: reddit-clone
           image: ashfaque9x/reddit-clone-app:1.0.0-7
           resources:
             limits:
